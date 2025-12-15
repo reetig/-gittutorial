@@ -1,0 +1,269 @@
+// if map my number 
+00-12
+13-1
+14-2...23-11 // night 
+vector<int>minutes;
+for(int i=0;i<timeStamp.length();i++){
+	if(auto ch: timeStamp[i]){
+		
+		
+		string ans="";
+		if(ch!=':'){
+	ans+=ch;
+	}	
+	int num=string_to_int(ans);
+	int hrs=ans/100;
+	if(hrs==0){
+		hrs=24;
+	}
+	int min=ans%100;
+	total_mins=hrs*60 + min;
+	minutes.push_back(total_min);
+	
+	
+		
+		
+ 
+	
+	}
+}
+
+//now i have array of mins
+sort(total_min.begin(),total_min.end());
+
+for(int j=0;j<total_min.length()-1;j++){
+	int mindiff=INT_MAX;
+	min_diff=min(min_diff,abs(total_min[j]-total_min[j+1]);
+}
+return min_diff;
+
+
+
+
+
+
+
+
+for(int i=0;i<start.length();i++){
+	string sub=start.substr(i,2);
+	if(sub=='XL') 
+}
+
+bool helper(int nx,int ny, char mat[][],int drrow,int dcol,int d){
+	int ch=2;
+	for(int ch=2;ch<word.size();ch++){
+	int mx=nx=drow[d];
+	int my=ny-dcol[d];
+		if(nx>=0 && ny>=0 && nx<rows &&  ny<cols && mat[nx][ny]!'word[ch]){
+	return false;
+		
+	
+}
+	}
+helper(mx,mymdcols,drows,mat,d,word);
+return true;
+
+}
+
+vector<pair<int,int>>firstOccurence(char mat[][],int rows,int cols,string word)
+	vector<pair<int,int>>ans;
+	
+	for(int i=0;i<rows;i++){
+		for(int j=0;j<cols;j++){
+		
+			check in all 8 directs
+
+			drow[8]={-1,-1,0,1,0,1,0,-1};
+			dcol[8]={0,1,1,1,0,-1,-1,-1};
+			if(word[0]==mat[i][j]) {
+
+			for(int d=0;d<8;d++){
+				int nx=i+drow[d];
+				int ny=j+dcol[d];
+				int ch=1;
+				for(nx>=0 && ny>=0 && nx<rows &&  ny<cols && mat[nx][ny]=='word[ch){
+					if(per(nx,ny,mat[][],drow,dcol,d)){
+ans.push_back({i,j});
+break;
+}/index of which direction i want to go in 
+						
+					}
+			}
+
+	
+}
+
+			
+	}
+
+		}
+	}
+	
+}
+
+
+
+
+
+int maxSubarraySum(int arr[],int n){
+	vector<int>chunks;
+	for(int i=0;i<n;i++){
+		while(i<n&& arr[i]>0){
+sum+=arr[i];
+i++;
+}
+
+chunks.push_back(sum);
+
+while(i<n && arr[i]<0){
+sum+=arr[i];
+}
+chunks.push_back(sum);
+	}
+
+for(int i=0;i<chunks,size();i++){
+	sum=0;
+	for(int j=i+1;j<chunks.size();j++){
+maxsum=max(maxsum,sum+chunks[i]);
+}
+	
+	
+}
+}
+
+node* reverse(node* head){
+	node* prev=NULL;
+node* curr=head
+node* nextnode=curr->next;
+	while(curr){
+curr->next=prev;
+prev=curr;
+curr=nextnode;
+nextnode=nextnode->next;
+}
+return prev;
+}
+
+node* swap_pairs(node* head){
+	if(head==NULL || head->next) {
+return head;
+}
+//if more than node
+node* revnoderr->next;
+node* nextnode=curr->next;
+while(curr->next1=NULL)
+	node* prevnode=null;
+	
+	counter=0
+	while(counter1=2){
+if(curr)
+curr->next=prev;
+prev=curr;
+curr=nextnode;
+nextnode=nextnode->next;
+counter++;
+}
+node* end;
+if(prevnode->next==head){
+//first swap
+prevnode=head;
+
+
+}
+end->next=prevnode;
+prevnode->next=end;
+
+
+}
+return head;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+int len_LL(node* head){
+node* temp=head;
+int len=0;
+while(temp){
+temp=temp->next;
+len++;
+}
+}
+
+node* nthnodefromlast(node* head,int n){
+int len=len_LL(head);
+if(n>len) return head;
+if(n==len) return head;
+int counter=0
+
+while(counter<=en-n &&temp)
+counter++;
+temp=teemp->next;
+
+}
+return temp->next;
+
+
+//LCA
+-if directly children of same parent then the parent is ans
+-if one ischild of another then the the who is the aprent is the ans
+-if they are children of different nodes, check for their parents' parents and so on go up till root
+-otherwer root wil be the answer
+
+//one of the solution that, i ll do an preorder traversale the nodes that come in its path till i find that node
+do it for both nodes and then 
+
+vector<node*>findPathnode* root){
+	vector<node*>ans;
+temp=root;
+while(temp!=n){
+ans.push_back(temp);
+findPathnode(temp->left,n);
+findPathnode(temp->right,n);
+return ans;
+}
+
+node* LCA(node* root,node*n1,node* n2){
+	if(n1==n2==NULL  or one of them is null) return null/root;
+
+	if(root==NULL or root-= is a leaf) retrunroot;
+
+	vector<node*>ans1=findpath(n1,root);
+	vector<node*>ans2=findpath(n2,root);
+	
+	int i=ans1.size()-2
+int j=ans2.size()-2
+while(i>=0 && j>=0){
+if(ans1==an2) return ans1[i];
+}
+	return root;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
