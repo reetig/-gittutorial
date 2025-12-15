@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "file2.h": "c",
+        "mylib_static.h": "c",
+        "mylib_dynamic.h": "c"
+    }
+}
